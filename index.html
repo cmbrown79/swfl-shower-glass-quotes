@@ -3,20 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frameless Shower Glass Quotes — Cape Coral & Fort Myers, FL | Free Quote Matching</title>
-<meta name="description" content="Get free quotes for frameless shower glass and shower door installation in Cape Coral, Fort Myers and Southwest Florida. We match homeowners with local shower glass specialists — no contractor markup, no obligation.">
-<meta name="keywords" content="frameless shower glass Cape Coral, shower door installation Fort Myers, shower glass quotes SWFL, frameless shower enclosure Florida, glass shower door replacement Cape Coral">
-<meta property="og:title" content="Shower Glass Quotes — Cape Coral & Fort Myers">
+<title>Frameless Shower Glass Quotes — Cape Coral, Fort Myers, Port Charlotte & North Port, FL | Free Quote Matching</title>
+<meta name="description" content="Get free quotes for frameless shower glass and shower door installation in Cape Coral, Fort Myers, Port Charlotte, North Port and Southwest Florida. We match homeowners with local shower glass specialists — no contractor markup, no obligation.">
+<meta name="keywords" content="frameless shower glass Cape Coral, shower door installation Fort Myers, shower glass quotes SWFL, frameless shower enclosure Florida, glass shower door replacement Cape Coral, shower glass Port Charlotte, shower doors North Port FL">
+<meta property="og:title" content="Shower Glass Quotes — Cape Coral · Fort Myers · Port Charlotte · North Port">
 <meta property="og:description" content="Free quotes from local shower glass specialists. Frameless enclosures, shower door replacement, and more across Southwest Florida.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "SWFL Shower Glass Quotes",
   "serviceType": "Shower glass quote matching service",
-  "description": "A free quote-matching service that connects homeowners in Cape Coral, Fort Myers and Southwest Florida with local shower glass specialists for frameless shower enclosures and shower door installation. This service is not a contractor and does not perform installations.",
+  "description": "A free quote-matching service that connects homeowners in Cape Coral, Fort Myers, Port Charlotte, North Port and Southwest Florida with local shower glass specialists for frameless shower enclosures and shower door installation. This service is not a contractor and does not perform installations.",
   "provider": {
     "@type": "Organization",
     "name": "SWFL Shower Glass Quotes",
@@ -32,273 +35,466 @@
     { "@type": "City", "name": "Estero, FL" },
     { "@type": "City", "name": "Lehigh Acres, FL" },
     { "@type": "City", "name": "Pine Island, FL" },
-    { "@type": "City", "name": "Naples, FL" }
+    { "@type": "City", "name": "Naples, FL" },
+    { "@type": "City", "name": "Port Charlotte, FL" },
+    { "@type": "City", "name": "North Port, FL" }
   ],
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free quote requests forwarded to local shower glass specialists" }
 }
 </script>
 <style>
   :root{
-    --deep:#06222e; --abyss:#04161f; --teal:#0e7d8c; --aqua:#37c4d6; --foam:#c9f2f2;
-    --glass:rgba(255,255,255,.08); --glass2:rgba(255,255,255,.13); --line:rgba(255,255,255,.18);
-    --ink:#eaf7f7; --mut:#a7c8cc; --card:#ffffff; --cardink:#12303a; --cardmut:#52707a;
-    --accent:#ffb454; --radius:20px;
+    --ink:#0a1417;            /* near-black, ocean-tinted */
+    --paper:#f2f6f4;          /* pale glass off-white */
+    --signal:#0e7d8c;         /* deep aqua — the one accent */
+    --signal-hi:#12a5bd;
+    --sun:#ffb454;            /* sparing warm highlight (prices) */
+    --deep:#06222e;           /* dark section ground */
+    --line:4px solid var(--ink);
+    --shadow:10px 10px 0 var(--ink);
   }
-  *{margin:0;padding:0;box-sizing:border-box}
+  *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--abyss);line-height:1.6}
-  a{color:var(--aqua)}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  body{background:var(--paper);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-weight:500;line-height:1.45;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:'Archivo Black','Archivo',sans-serif;text-transform:uppercase;line-height:.95;letter-spacing:-.02em}
+  .mono{font-family:'Space Mono',monospace}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 
-  /* ---------- hero backdrop: layered ocean gradients + glass panes ---------- */
-  .hero{
-    position:relative;overflow:hidden;
+  /* ---- top bar ---- */
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:14px;border-bottom:var(--line);padding:14px 24px;position:sticky;top:0;z-index:50;background:var(--paper)}
+  .brand{font-family:'Archivo Black';font-size:19px;letter-spacing:-.03em;text-transform:uppercase;line-height:1}
+  .brand span{color:var(--signal)}
+  .brand small{display:block;font-family:'Space Mono';font-weight:400;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:4px;color:#43565c}
+  .topbar .cta{font-family:'Space Mono';font-weight:700;border:var(--line);padding:9px 14px;box-shadow:5px 5px 0 var(--ink);background:var(--signal);color:#fff;text-decoration:none;font-size:13px;white-space:nowrap;text-transform:uppercase}
+  .topbar .cta:hover{background:var(--ink);box-shadow:5px 5px 0 var(--signal)}
+
+  /* ---- disclosure strip (above the fold, always) ---- */
+  .disclosure{background:var(--ink);color:var(--paper);padding:10px 24px;font-family:'Space Mono';font-size:12.5px;letter-spacing:.02em;text-align:center}
+  .disclosure b{color:var(--sun)}
+
+  /* ---- marquee ---- */
+  .marquee{background:var(--signal);color:#fff;border-bottom:var(--line);overflow:hidden;white-space:nowrap;padding:9px 0}
+  .marquee .track{display:inline-block;will-change:transform;animation:scroll 30s linear infinite;font-family:'Space Mono';font-weight:700;letter-spacing:.04em;font-size:13.5px}
+  .marquee .track span{padding:0 20px}
+  .marquee .track b{color:var(--sun)}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---- hero ---- */
+  .hero{padding:56px 0 48px;border-bottom:var(--line);position:relative;overflow:hidden;
     background:
-      radial-gradient(1100px 520px at 85% -10%, rgba(55,196,214,.35), transparent 60%),
-      radial-gradient(900px 480px at -10% 30%, rgba(14,125,140,.5), transparent 60%),
-      radial-gradient(700px 700px at 60% 115%, rgba(255,180,84,.14), transparent 55%),
-      linear-gradient(160deg,#0a3547 0%, var(--deep) 45%, var(--abyss) 100%);
-  }
-  .hero::before,.hero::after{
-    content:"";position:absolute;border:1px solid rgba(255,255,255,.14);border-radius:14px;
-    background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.02));
-    backdrop-filter:blur(2px);pointer-events:none;
-  }
-  .hero::before{width:340px;height:460px;right:-70px;top:60px;transform:rotate(9deg)}
-  .hero::after{width:240px;height:340px;right:190px;top:190px;transform:rotate(-6deg);opacity:.6}
+      radial-gradient(700px 340px at 88% -10%, rgba(18,165,189,.20), transparent 60%),
+      radial-gradient(560px 380px at -8% 90%, rgba(14,125,140,.16), transparent 60%),
+      var(--paper)}
+  .hero-grid{display:grid;gap:40px;align-items:center}
+  @media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+  .hero .kicker{font-family:'Space Mono';font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin-bottom:20px}
+  .hero h1{font-size:clamp(40px,7.4vw,84px)}
+  .hero h1 em{font-style:normal;display:inline-block;background:var(--signal);color:#fff;padding:0 .12em;transform:rotate(-1.5deg)}
+  .hero p.lead{max-width:600px;margin-top:24px;font-size:18.5px}
+  .hero .cta-row{margin-top:30px;display:flex;gap:16px;flex-wrap:wrap}
+  .btn{font-family:'Archivo Black';text-transform:uppercase;font-size:15px;border:var(--line);padding:16px 24px;background:#fff;box-shadow:var(--shadow);cursor:pointer;text-decoration:none;display:inline-block;transition:transform .08s,box-shadow .08s;color:var(--ink)}
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:13px 13px 0 var(--ink)}
+  .btn:active{transform:translate(4px,4px);box-shadow:4px 4px 0 var(--ink)}
+  .btn.primary{background:var(--signal);color:#fff}
+  .btn.dark{background:var(--ink);color:var(--paper)}
+  .trustrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+  .chip{font-family:'Space Mono';font-size:12.5px;font-weight:700;background:#fff;border:3px solid var(--ink);padding:7px 13px;box-shadow:4px 4px 0 var(--ink)}
 
-  header{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:22px 0}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
-  .brand .drop{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:20px;
-    background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.05));border:1px solid var(--line)}
-  .brand small{display:block;font-weight:500;color:var(--mut);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-  .hdr-cta{display:none}
-  @media(min-width:720px){.hdr-cta{display:inline-block}}
-  .btn{display:inline-block;background:linear-gradient(135deg,#ffb454,#ff8a3c);color:#2a1500;font-weight:700;
-    padding:13px 26px;border-radius:999px;text-decoration:none;border:none;cursor:pointer;font-size:1rem;
-    box-shadow:0 10px 26px rgba(255,150,60,.35);transition:transform .15s ease, box-shadow .15s ease}
-  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(255,150,60,.45)}
-  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+  /* hero glass visual — pure SVG frameless enclosure */
+  .glassfig{border:var(--line);background:linear-gradient(165deg,#0b3547,#06222e 70%);box-shadow:var(--shadow);padding:26px 22px 18px}
+  .glassfig svg{width:100%;height:auto;display:block}
+  .glassfig figcaption{font-family:'Space Mono';font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#9fd8e2;margin-top:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+  .glassfig figcaption b{color:#fff}
 
-  .hero-grid{position:relative;z-index:2;display:grid;gap:36px;padding:26px 0 74px}
-  @media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:start;padding-top:44px}}
-  .kicker{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--foam);
-    border:1px solid var(--line);background:var(--glass);padding:6px 14px;border-radius:999px;margin-bottom:20px}
-  h1{font-size:clamp(2.3rem,5.4vw,3.7rem);line-height:1.08;font-weight:800;letter-spacing:-.01em}
-  h1 .shine{background:linear-gradient(92deg,#7fe6f2,#c9f2f2 55%,#ffb454);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .sub{margin:20px 0 26px;color:#cfe8ea;font-size:1.13rem;max-width:34rem}
-  .trustrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-  .chip{font-size:.86rem;color:var(--foam);background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
-  .disclosure{margin-top:22px;font-size:.86rem;color:var(--mut);max-width:34rem;border-left:3px solid var(--aqua);padding-left:12px}
+  /* ---- section scaffolding ---- */
+  section{border-bottom:var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;padding:48px 0 8px}
+  .sec-head .num{font-family:'Space Mono';font-weight:700;color:var(--signal);font-size:15px;white-space:nowrap}
+  .sec-head h2{font-size:clamp(28px,4.8vw,52px)}
+  .sec-sub{max-width:640px;margin:8px 0 34px;font-size:16.5px;color:#33484f}
 
-  /* ---------- quote form card ---------- */
-  .formcard{background:var(--card);color:var(--cardink);border-radius:var(--radius);padding:28px 26px 24px;
-    box-shadow:0 30px 60px rgba(0,0,0,.45);position:relative}
-  .formcard::before{content:"";position:absolute;inset:0;border-radius:var(--radius);pointer-events:none;
-    background:linear-gradient(150deg,rgba(55,196,214,.14),transparent 40%)}
-  .formcard h2{font-size:1.42rem;line-height:1.25;margin-bottom:4px}
-  .formcard p.lede{color:var(--cardmut);font-size:.95rem;margin-bottom:18px}
-  form{display:grid;gap:13px;position:relative}
-  .row2{display:grid;gap:13px}
-  @media(min-width:560px){.row2{grid-template-columns:1fr 1fr}}
-  label{font-size:.82rem;font-weight:600;color:#33545f;display:block;margin-bottom:5px}
-  input,select,textarea{width:100%;padding:12px 13px;border:1.5px solid #cfdee2;border-radius:11px;font:inherit;font-size:.97rem;background:#fbfdfe;color:var(--cardink)}
-  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,125,140,.18)}
-  textarea{resize:vertical;min-height:74px}
-  .consent{display:flex;gap:10px;align-items:flex-start;background:#f0f8f9;border:1px solid #d7e8ea;border-radius:11px;padding:12px 13px}
-  .consent input{width:19px;height:19px;margin-top:3px;flex:none;accent-color:var(--teal)}
-  .consent label{font-weight:500;font-size:.8rem;color:#46626c;margin:0;line-height:1.45}
-  .formcard .btn{width:100%;text-align:center;font-size:1.06rem;padding:15px}
-  .fineprint{font-size:.76rem;color:#7d99a1;text-align:center;margin-top:4px}
+  /* ================= THE FUNNEL ================= */
+  #quotes{background:#fff}
+  .funnel{border:var(--line);box-shadow:var(--shadow);background:var(--paper);margin-bottom:52px}
+  .fprogress{display:flex;align-items:center;gap:14px;padding:16px 22px;border-bottom:var(--line);background:#fff;flex-wrap:wrap}
+  .fprogress .stepno{font-family:'Space Mono';font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--signal);white-space:nowrap}
+  .fbar{display:flex;gap:6px;flex:1;min-width:140px}
+  .fbar i{height:12px;flex:1;background:#fff;border:3px solid var(--ink)}
+  .fbar i.on{background:var(--signal)}
+  .fstep{display:none;padding:30px 26px 34px;animation:drop .18s ease}
+  .fstep.open{display:block}
+  @keyframes drop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+  .fstep h3{font-size:clamp(24px,4vw,36px);margin-bottom:6px}
+  .fstep .hint{font-family:'Space Mono';font-size:13px;color:var(--signal);margin-bottom:22px}
+  .opts{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:680px){.opts{grid-template-columns:1fr 1fr}}
+  .opt{position:relative;display:flex;gap:16px;align-items:center;background:#fff;border:var(--line);padding:20px 18px;cursor:pointer;min-height:84px;transition:background .12s,color .12s,transform .08s;box-shadow:6px 6px 0 var(--ink)}
+  .opt:hover{background:#e8f4f5}
+  .opt:active{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--ink)}
+  .opt input{position:absolute;opacity:0;pointer-events:none}
+  .opt .glyph{flex:0 0 auto;width:52px;height:52px;display:grid;place-items:center}
+  .opt .glyph svg{width:52px;height:52px}
+  .opt .t{font-family:'Archivo Black';text-transform:uppercase;font-size:16.5px;line-height:1.1}
+  .opt .d{font-family:'Space Mono';font-size:12px;opacity:.75;margin-top:4px}
+  .opt.sel{background:var(--signal);color:#fff;box-shadow:6px 6px 0 var(--ink)}
+  .opt.sel .d{opacity:.9}
+  .opt.sel .glyph svg .gl{stroke:#fff}
+  .opt.sel .glyph svg .gf{fill:rgba(255,255,255,.22)}
+  .opt .tick{position:absolute;top:8px;right:10px;font-family:'Space Mono';font-weight:700;font-size:15px;opacity:0}
+  .opt.sel .tick{opacity:1}
+  .opt.missing{animation:shake .3s ease;border-color:#c22}
+  @keyframes shake{0%,100%{transform:none}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+  .fnav{display:flex;justify-content:space-between;gap:14px;margin-top:26px;flex-wrap:wrap}
+  .fnav .btn{box-shadow:7px 7px 0 var(--ink)}
+  .fnav .spacer{flex:1}
+  .sizefield{margin-top:20px}
+  label.flabel{font-family:'Space Mono';font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:6px}
+  input[type=text],input[type=tel],input[type=email],select,textarea{font-family:'Archivo';font-size:16px;padding:13px 14px;border:3px solid var(--ink);background:#fff;width:100%;color:var(--ink);border-radius:0;-webkit-appearance:none;appearance:none}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--signal);box-shadow:4px 4px 0 var(--signal)}
+  .fgrid{display:grid;grid-template-columns:1fr;gap:16px}
+  @media(min-width:680px){.fgrid{grid-template-columns:1fr 1fr}.field.full{grid-column:1/-1}}
+  .summary{border:3px solid var(--ink);background:#fff;padding:14px 16px;font-family:'Space Mono';font-size:13.5px;margin-bottom:20px;box-shadow:5px 5px 0 var(--ink)}
+  .summary b{color:var(--signal)}
+  .consent{display:flex;gap:12px;align-items:flex-start;background:#e8f4f5;border:3px solid var(--ink);padding:14px 15px;margin-top:18px}
+  .consent input{width:22px;height:22px;margin-top:2px;flex:none;accent-color:var(--signal)}
+  .consent label{font-size:.83rem;line-height:1.5;color:#22383f;cursor:pointer}
+  .fineprint{font-family:'Space Mono';font-size:11.5px;color:#5a7077;text-align:center;margin-top:14px}
+  .err{display:none;font-family:'Space Mono';font-size:13px;font-weight:700;color:#b00020;margin-top:14px}
+  .err.show{display:block}
 
-  /* ---------- light sections ---------- */
-  section.light{background:linear-gradient(180deg,#f4fafb,#e9f4f5);color:var(--cardink);padding:72px 0}
-  section.light h2{font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.15;margin-bottom:12px;letter-spacing:-.01em}
-  section.light .lede{color:var(--cardmut);max-width:44rem;margin-bottom:36px;font-size:1.05rem}
-  .steps{display:grid;gap:18px}
+  /* ---- how it works ---- */
+  .steps{display:grid;gap:18px;padding-bottom:52px}
   @media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
-  .step{background:#fff;border:1px solid #dcebee;border-radius:var(--radius);padding:26px 24px;box-shadow:0 8px 24px rgba(6,34,46,.06)}
-  .step .num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;
-    background:linear-gradient(135deg,var(--teal),var(--aqua));margin-bottom:14px}
-  .step h3{margin-bottom:6px;font-size:1.08rem}
-  .step p{color:var(--cardmut);font-size:.95rem}
+  .step{background:#fff;border:var(--line);padding:24px 22px;box-shadow:7px 7px 0 var(--ink)}
+  .step .num{font-family:'Archivo Black';font-size:34px;color:var(--signal);line-height:1}
+  .step h3{font-size:18px;margin:10px 0 6px}
+  .step p{font-size:14.5px;color:#33484f}
 
-  .types{display:grid;gap:18px}
+  /* ---- styles ---- */
+  .types{display:grid;gap:18px;padding-bottom:52px}
   @media(min-width:820px){.types{grid-template-columns:repeat(3,1fr)}}
-  .type{border-radius:var(--radius);padding:28px 24px;color:var(--ink);position:relative;overflow:hidden;
-    background:linear-gradient(160deg,#0b3d50,#06222e);border:1px solid rgba(255,255,255,.12)}
-  .type::after{content:"";position:absolute;width:170px;height:230px;right:-46px;top:-30px;transform:rotate(10deg);
-    border:1px solid rgba(255,255,255,.22);border-radius:12px;background:linear-gradient(135deg,rgba(255,255,255,.12),transparent)}
-  .type h3{font-size:1.15rem;margin-bottom:8px;position:relative;z-index:1}
-  .type p{color:#bcd9dc;font-size:.94rem;position:relative;z-index:1}
-  .type .price{margin-top:16px;font-weight:700;color:var(--accent);position:relative;z-index:1}
+  .type{background:#fff;border:var(--line);padding:24px 22px;box-shadow:7px 7px 0 var(--ink)}
+  .type svg{width:100%;height:110px;display:block;margin-bottom:14px;background:linear-gradient(160deg,#eef7f8,#dceef0);border:3px solid var(--ink)}
+  .type h3{font-size:19px;margin-bottom:8px}
+  .type p{font-size:14.5px;color:#33484f}
+  .type .price{margin-top:14px;font-family:'Space Mono';font-weight:700;font-size:13px;background:var(--sun);display:inline-block;padding:4px 9px;border:3px solid var(--ink)}
 
-  table.cost{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 24px rgba(6,34,46,.06)}
-  table.cost th,table.cost td{padding:15px 18px;text-align:left;border-bottom:1px solid #e4eff1;font-size:.97rem}
-  table.cost th{background:#0b3d50;color:#eaf7f7;font-weight:700}
+  /* ---- cost ---- */
+  table.cost{width:100%;border-collapse:collapse;background:#fff;border:var(--line);box-shadow:var(--shadow);margin-bottom:14px}
+  table.cost th,table.cost td{padding:14px 18px;text-align:left;border-bottom:3px solid var(--ink);font-size:15px}
+  table.cost th{background:var(--ink);color:var(--paper);font-family:'Archivo Black';text-transform:uppercase;font-size:14px;letter-spacing:.02em}
   table.cost tr:last-child td{border-bottom:none}
-  td.r,th.r{text-align:right;white-space:nowrap}
-  .note{font-size:.85rem;color:var(--cardmut);margin-top:12px}
+  td.r,th.r{text-align:right;white-space:nowrap;font-family:'Space Mono';font-weight:700}
+  .note{font-size:13.5px;color:#5a7077;margin-bottom:52px;max-width:760px}
 
-  .areas{display:flex;flex-wrap:wrap;gap:10px}
-  .areas span{background:#fff;border:1px solid #d7e6e9;color:#1d4654;border-radius:999px;padding:8px 16px;font-size:.92rem;font-weight:600}
+  /* ---- areas ---- */
+  .areas{display:flex;flex-wrap:wrap;gap:10px;padding-bottom:52px}
+  .areas span{background:#fff;border:3px solid var(--ink);padding:8px 15px;font-family:'Space Mono';font-weight:700;font-size:13.5px;box-shadow:4px 4px 0 var(--ink)}
+  .areas span.new{background:var(--sun)}
 
-  .faq{display:grid;gap:12px}
-  details{background:#fff;border:1px solid #dcebee;border-radius:14px;padding:18px 20px}
-  summary{font-weight:700;cursor:pointer;font-size:1rem}
-  details p{color:var(--cardmut);margin-top:8px;font-size:.96rem}
+  /* ---- faq ---- */
+  .faq{display:grid;gap:12px;padding-bottom:52px}
+  details{background:#fff;border:3px solid var(--ink);padding:16px 20px;box-shadow:5px 5px 0 var(--ink)}
+  summary{font-family:'Archivo Black';text-transform:uppercase;font-size:15px;cursor:pointer;letter-spacing:.01em}
+  details p{color:#33484f;margin-top:8px;font-size:15px}
 
-  .midcta{background:linear-gradient(135deg,#0b3d50,#06222e);border-radius:var(--radius);padding:36px 30px;text-align:center;color:var(--ink)}
-  .midcta h2{color:var(--ink)!important;margin-bottom:8px}
-  .midcta p{color:#bcd9dc;margin-bottom:22px}
+  /* ---- closing cta ---- */
+  .midcta{background:var(--deep);color:var(--paper);border:var(--line);box-shadow:var(--shadow);padding:38px 30px;text-align:center;margin-bottom:52px}
+  .midcta h2{color:#fff;font-size:clamp(26px,4.4vw,44px)}
+  .midcta p{color:#bcd9dc;margin:10px 0 24px;font-size:16.5px}
 
-  footer{background:var(--abyss);padding:44px 0 54px;color:var(--mut);font-size:.88rem}
-  footer .cols{display:grid;gap:22px}
-  @media(min-width:820px){footer .cols{grid-template-columns:1.2fr .8fr}}
-  footer strong{color:var(--ink)}
-  footer p{margin-bottom:10px;max-width:46rem}
+  /* ---- footer ---- */
+  footer{background:var(--paper);padding:48px 0 60px}
+  .fcols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+  footer h4{font-family:'Space Mono';font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.1em;color:var(--signal);margin-bottom:12px}
+  footer .big-mark{font-family:'Archivo Black';text-transform:uppercase;font-size:clamp(32px,5.6vw,58px);line-height:.92;letter-spacing:-.03em}
+  footer .big-mark span{color:var(--signal)}
+  footer p{font-size:14px;margin:4px 0;color:#33484f}
+  .madeby{margin-top:38px;border-top:var(--line);padding-top:18px;font-family:'Space Mono';font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .madeby b{color:var(--signal)}
+  .legal{margin-top:16px;font-size:12.5px;color:#5a7077;max-width:900px;line-height:1.6}
+
+  @media(max-width:820px){.fcols{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<div class="hero">
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="drop">🚿</div>
-        <div>SWFL Shower Glass Quotes<small>A _beachside quote service</small></div>
-      </div>
-      <a class="btn hdr-cta" href="#quote">Get my free quotes</a>
-    </header>
+<div class="topbar">
+  <div class="brand">SWFL<span>.</span>SHOWER GLASS<small>Quotes · a _beachside quote service</small></div>
+  <a class="cta" href="#quotes">Get free quotes</a>
+</div>
 
+<div class="disclosure">Full transparency: we are a <b>quote-matching service, not a contractor</b>. We never charge homeowners — we match you with local glass specialists who quote you directly.</div>
+
+<div class="marquee">
+  <div class="track">
+    <span>FRAMELESS <b>◆</b> SEMI-FRAMELESS <b>◆</b> FRAMED <b>◆</b> FREE FOR HOMEOWNERS <b>◆</b> CAPE CORAL · FORT MYERS · PORT CHARLOTTE · NORTH PORT · BONITA SPRINGS · ESTERO · NAPLES <b>◆</b> NO OBLIGATION <b>◆</b></span>
+    <span>FRAMELESS <b>◆</b> SEMI-FRAMELESS <b>◆</b> FRAMED <b>◆</b> FREE FOR HOMEOWNERS <b>◆</b> CAPE CORAL · FORT MYERS · PORT CHARLOTTE · NORTH PORT · BONITA SPRINGS · ESTERO · NAPLES <b>◆</b> NO OBLIGATION <b>◆</b></span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="kicker">Cape Coral · Fort Myers · Southwest Florida</span>
-        <h1>Frameless shower glass, <span class="shine">quoted by the people who actually install it.</span></h1>
-        <p class="sub">Tell us about your bathroom once. We send your request to local shower glass specialists in Cape Coral and Fort Myers, and they come back with real quotes — free, and with no obligation to hire anyone.</p>
-        <a class="btn" href="#quote">Request free quotes →</a>
+        <div class="kicker">Free quote matching · Cape Coral → North Port</div>
+        <h1>Shower glass, <em>quoted</em> by the people who install it.</h1>
+        <p class="lead">Answer five quick taps about your bathroom. We send your request to local shower glass specialists across Southwest Florida, and they come back with real quotes — free, and with no obligation to hire anyone.</p>
+        <div class="cta-row">
+          <a href="#quotes" class="btn primary">Start — it takes 60 seconds →</a>
+        </div>
         <div class="trustrow">
           <span class="chip">✓ Always free for homeowners</span>
           <span class="chip">✓ Local SWFL specialists</span>
           <span class="chip">✓ No obligation</span>
         </div>
-        <p class="disclosure"><strong>Full transparency:</strong> we are a quote-matching service, not a contractor. We don't install glass, we don't mark up quotes, and we never charge homeowners. Local specialists pay nothing for your first request either — we simply make the introduction.</p>
       </div>
-
-      <div class="formcard" id="quote">
-        <h2>Get your free shower glass quotes</h2>
-        <p class="lede">Takes about 60 seconds. Specialists usually respond within 1–2 business days.</p>
-        <form action="https://formsubmit.co/chris@cr8fconclave.com" method="POST">
-          <input type="hidden" name="_subject" value="New shower glass quote request — SWFL Shower Glass Quotes">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="https://cmbrown79.github.io/swfl-shower-glass-quotes/thanks.html">
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-          <div class="row2">
-            <div>
-              <label for="f-name">Your name *</label>
-              <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith">
-            </div>
-            <div>
-              <label for="f-phone">Phone *</label>
-              <input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(239) 555-0123">
-            </div>
-          </div>
-          <div>
-            <label for="f-email">Email *</label>
-            <input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
-          </div>
-          <div class="row2">
-            <div>
-              <label for="f-city">City *</label>
-              <select id="f-city" name="city" required>
-                <option value="" disabled selected>Select your city</option>
-                <option>Cape Coral</option>
-                <option>Fort Myers</option>
-                <option>North Fort Myers</option>
-                <option>Fort Myers Beach</option>
-                <option>Sanibel / Captiva</option>
-                <option>Bonita Springs</option>
-                <option>Estero</option>
-                <option>Lehigh Acres</option>
-                <option>Pine Island / Matlacha</option>
-                <option>Naples</option>
-                <option>Other SWFL</option>
-              </select>
-            </div>
-            <div>
-              <label for="f-type">Project type *</label>
-              <select id="f-type" name="project_type" required>
-                <option value="" disabled selected>What do you need?</option>
-                <option>New frameless enclosure</option>
-                <option>Semi-frameless enclosure</option>
-                <option>Framed enclosure</option>
-                <option>Replace existing door / enclosure</option>
-                <option>Shower door only</option>
-                <option>Tub-to-shower conversion (glass)</option>
-                <option>Not sure — advise me</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="f-size">Rough shower size (if you know it)</label>
-            <input id="f-size" name="rough_size" type="text" placeholder="e.g. 48&quot; wide × 72&quot; tall, corner unit">
-          </div>
-          <div>
-            <label for="f-msg">Anything else?</label>
-            <textarea id="f-msg" name="message" placeholder="Timeline, glass style, hardware finish, questions…"></textarea>
-          </div>
-          <div class="consent">
-            <input id="f-consent" type="checkbox" name="tcpa_consent" value="yes" required>
-            <label for="f-consent">I agree to be contacted about my request by phone, text, and email by SWFL Shower Glass Quotes and the local specialists my request is sent to. Message/data rates may apply. This isn't a condition of purchase, and I can opt out anytime.</label>
-          </div>
-          <button class="btn" type="submit">Send my free quote request</button>
-          <p class="fineprint">No spam, no selling your info to data brokers. Your request goes to local glass specialists only.</p>
-        </form>
-      </div>
+      <figure class="glassfig" aria-hidden="true">
+        <svg viewBox="0 0 460 340" role="img" aria-label="Frameless glass shower enclosure illustration">
+          <!-- back wall tiles -->
+          <g stroke="rgba(255,255,255,.10)" stroke-width="1.5">
+            <path d="M30 30 H430 M30 85 H430 M30 140 H430 M30 195 H430 M30 250 H430"/>
+            <path d="M110 30 V305 M195 30 V305 M280 30 V305 M360 30 V305"/>
+          </g>
+          <!-- shower head + water -->
+          <path d="M96 30 v26 q0 10 12 12 l16 3" fill="none" stroke="#9fd8e2" stroke-width="5" stroke-linecap="round"/>
+          <g stroke="#37c4d6" stroke-width="2.5" stroke-linecap="round" opacity=".75">
+            <path d="M132 84 l-7 20"/><path d="M146 86 l-3 21"/><path d="M160 84 l2 20"/><path d="M139 108 l-6 18"/><path d="M153 110 l-2 18"/>
+          </g>
+          <!-- floor -->
+          <path d="M30 305 H430" stroke="rgba(255,255,255,.35)" stroke-width="3"/>
+          <!-- fixed panel -->
+          <rect x="238" y="52" width="168" height="253" fill="rgba(127,230,242,.13)" stroke="#c9f2f2" stroke-width="3"/>
+          <!-- door -->
+          <rect x="86" y="52" width="140" height="253" fill="rgba(127,230,242,.20)" stroke="#ffffff" stroke-width="3.5"/>
+          <!-- hinges -->
+          <rect x="222" y="86" width="10" height="22" fill="#ffb454"/>
+          <rect x="222" y="238" width="10" height="22" fill="#ffb454"/>
+          <!-- handle -->
+          <rect x="102" y="168" width="7" height="62" rx="3.5" fill="#ffb454"/>
+          <!-- sheen -->
+          <path d="M120 52 L196 52 L128 305 L86 305 Z" fill="rgba(255,255,255,.07)"/>
+          <path d="M282 52 L330 52 L262 305 L238 305 Z" fill="rgba(255,255,255,.05)"/>
+        </svg>
+        <figcaption><span><b>Frameless</b> · ⅜″–½″ tempered glass</span><span>Clips &amp; hinges — no frame</span></figcaption>
+      </figure>
     </div>
   </div>
-</div>
+</header>
 
-<section class="light">
+<!-- ================= 01 / THE FUNNEL ================= -->
+<section id="quotes">
   <div class="wrap">
-    <h2>How it works</h2>
-    <p class="lede">No showroom visit, no calling five shops and repeating yourself. One request does the rounds for you.</p>
+    <div class="sec-head"><span class="num">01 /</span><h2>Get your quotes</h2></div>
+    <p class="sec-sub">Five quick steps. Tap your answers — specialists usually respond within 1–2 business days, and you never pay us a cent.</p>
+
+    <form class="funnel" id="funnel" action="https://formsubmit.co/chris@cr8fconclave.com" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="New shower glass quote request — SWFL Shower Glass Quotes">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://cmbrown79.github.io/swfl-shower-glass-quotes/thanks.html">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="fprogress">
+        <span class="stepno" id="stepNo">Step 1 of 5</span>
+        <div class="fbar" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+        <span class="mono" style="font-size:12px" id="stepName">What do you need?</span>
+      </div>
+
+      <!-- STEP 1 -->
+      <div class="fstep open" data-step="1">
+        <h3>What do you need?</h3>
+        <p class="hint">Tap one — we'll take it from there.</p>
+        <div class="opts" role="radiogroup" aria-label="What do you need?">
+          <label class="opt"><input type="radio" name="need" value="Brand-new frameless enclosure">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="8" y="8" width="36" height="38" fill="rgba(14,125,140,.14)"/><rect class="gl" x="8" y="8" width="36" height="38" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M15 27 h6" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Brand-new enclosure</span><span class="d" style="display:block">Glass for a shower that has none yet</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="need" value="Replacing old shower doors">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="8" y="8" width="36" height="38" fill="rgba(14,125,140,.14)"/><rect class="gl" x="8" y="8" width="36" height="38" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M14 20 L38 34 M38 20 L14 34" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Replacing old doors</span><span class="d" style="display:block">Swap the dated doors for clean glass</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="need" value="Part of a bathroom remodel">
+            <span class="glyph"><svg viewBox="0 0 52 52"><path class="gl" d="M10 40 V22 a8 8 0 0 1 16 0 v4" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M6 40 h40 M14 46 h24" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Bathroom remodel</span><span class="d" style="display:block">Glass is one piece of a bigger project</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="need" value="Not sure yet — advise me">
+            <span class="glyph"><svg viewBox="0 0 52 52"><text x="26" y="40" text-anchor="middle" font-family="Archivo Black" font-size="34" fill="#0e7d8c">?</text></svg></span>
+            <span><span class="t">Not sure yet</span><span class="d" style="display:block">Advise me — that's what the quotes are for</span></span><span class="tick">✓</span></label>
+        </div>
+      </div>
+
+      <!-- STEP 2 -->
+      <div class="fstep" data-step="2">
+        <h3>Which style?</h3>
+        <p class="hint">Pick the look. Not sure is a fine answer — specialists will steer you.</p>
+        <div class="opts" role="radiogroup" aria-label="Which style?">
+          <label class="opt"><input type="radio" name="style" value="Frameless">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="10" y="7" width="32" height="39" fill="rgba(14,125,140,.14)"/><rect class="gl" x="10" y="7" width="32" height="39" fill="none" stroke="#0e7d8c" stroke-width="3"/><circle cx="36" cy="14" r="2.4" fill="#ffb454"/><circle cx="36" cy="39" r="2.4" fill="#ffb454"/></svg></span>
+            <span><span class="t">Frameless</span><span class="d" style="display:block">Thick glass, clips only — the spa look</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="style" value="Semi-frameless">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="10" y="7" width="32" height="39" fill="rgba(14,125,140,.14)"/><rect class="gl" x="10" y="7" width="32" height="39" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M10 7 h32 M10 46 h32" stroke="#0e7d8c" stroke-width="5"/></svg></span>
+            <span><span class="t">Semi-frameless</span><span class="d" style="display:block">Frameless door, slim frame where needed</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="style" value="Framed">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="10" y="7" width="32" height="39" fill="rgba(14,125,140,.14)"/><rect class="gl" x="10" y="7" width="32" height="39" fill="none" stroke="#0e7d8c" stroke-width="6"/></svg></span>
+            <span><span class="t">Framed</span><span class="d" style="display:block">Full metal frame — sturdy &amp; economical</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="style" value="Not sure — advise me">
+            <span class="glyph"><svg viewBox="0 0 52 52"><text x="26" y="40" text-anchor="middle" font-family="Archivo Black" font-size="34" fill="#0e7d8c">?</text></svg></span>
+            <span><span class="t">Not sure</span><span class="d" style="display:block">Show me options in the quotes</span></span><span class="tick">✓</span></label>
+        </div>
+        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span></div>
+      </div>
+
+      <!-- STEP 3 -->
+      <div class="fstep" data-step="3">
+        <h3>Your shower setup</h3>
+        <p class="hint">Rough is fine — the specialist templates exact measurements before anything is cut.</p>
+        <div class="opts" role="radiogroup" aria-label="Your shower setup">
+          <label class="opt"><input type="radio" name="setup" value="Single door">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="16" y="7" width="22" height="39" fill="rgba(14,125,140,.14)"/><rect class="gl" x="16" y="7" width="22" height="39" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M21 27 h4" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Single door</span><span class="d" style="display:block">One swinging door</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="setup" value="Door + fixed panel">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="6" y="7" width="40" height="39" fill="rgba(14,125,140,.14)"/><rect class="gl" x="6" y="7" width="40" height="39" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M26 7 v39" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Door + panel</span><span class="d" style="display:block">Door beside a fixed glass panel</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="setup" value="Corner / neo-angle">
+            <span class="glyph"><svg viewBox="0 0 52 52"><path class="gf" d="M8 46 V18 L20 7 H44 V46 Z" fill="rgba(14,125,140,.14)"/><path class="gl" d="M8 46 V18 L20 7 H44 V46" fill="none" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Corner unit</span><span class="d" style="display:block">Corner or neo-angle layout</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="setup" value="Sliding doors">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gf" x="6" y="7" width="40" height="39" fill="rgba(14,125,140,.14)"/><rect class="gl" x="6" y="7" width="40" height="39" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M20 7 v39 M32 7 v39" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Sliding doors</span><span class="d" style="display:block">Bypass / barn-style sliders</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="setup" value="Tub with glass doors">
+            <span class="glyph"><svg viewBox="0 0 52 52"><path class="gl" d="M8 34 h36 l-4 10 H12 Z" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M14 34 V12 h24 v22" fill="none" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Tub + glass</span><span class="d" style="display:block">Glass doors on a bathtub</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="setup" value="Not sure">
+            <span class="glyph"><svg viewBox="0 0 52 52"><text x="26" y="40" text-anchor="middle" font-family="Archivo Black" font-size="34" fill="#0e7d8c">?</text></svg></span>
+            <span><span class="t">Not sure</span><span class="d" style="display:block">They'll figure it out on the visit</span></span><span class="tick">✓</span></label>
+        </div>
+        <div class="sizefield">
+          <label class="flabel" for="f-size">Rough size, if you know it (optional)</label>
+          <input id="f-size" name="rough_size" type="text" placeholder="e.g. 48&quot; wide × 72&quot; tall, corner unit">
+        </div>
+        <p class="err" id="err3">Pick the setup that sounds closest — “Not sure” counts.</p>
+        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span><button type="button" class="btn primary next">Next →</button></div>
+      </div>
+
+      <!-- STEP 4 -->
+      <div class="fstep" data-step="4">
+        <h3>When do you want it?</h3>
+        <p class="hint">Honest answer helps — specialists prioritize by timeline.</p>
+        <div class="opts" role="radiogroup" aria-label="Timeline">
+          <label class="opt"><input type="radio" name="timeline" value="ASAP — ready now">
+            <span class="glyph"><svg viewBox="0 0 52 52"><path d="M30 4 L14 30 h10 L20 48 L38 20 H27 Z" fill="#ffb454" stroke="#0a1417" stroke-width="2.5"/></svg></span>
+            <span><span class="t">ASAP</span><span class="d" style="display:block">Ready to hire now</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="timeline" value="Within a month">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gl" x="8" y="12" width="36" height="32" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M8 22 h36 M18 6 v10 M34 6 v10" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">Within a month</span><span class="d" style="display:block">Project is scheduled or close</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="timeline" value="1–3 months out">
+            <span class="glyph"><svg viewBox="0 0 52 52"><rect class="gl" x="8" y="12" width="36" height="32" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M8 22 h36 M18 6 v10 M34 6 v10 M17 32 h6 M25 32 h6 M33 32 h6" stroke="#0e7d8c" stroke-width="3"/></svg></span>
+            <span><span class="t">1–3 months</span><span class="d" style="display:block">Planning ahead</span></span><span class="tick">✓</span></label>
+          <label class="opt"><input type="radio" name="timeline" value="Just researching">
+            <span class="glyph"><svg viewBox="0 0 52 52"><circle class="gl" cx="23" cy="23" r="13" fill="none" stroke="#0e7d8c" stroke-width="3"/><path class="gl" d="M33 33 L45 45" stroke="#0e7d8c" stroke-width="4"/></svg></span>
+            <span><span class="t">Just researching</span><span class="d" style="display:block">Pricing it out for now</span></span><span class="tick">✓</span></label>
+        </div>
+        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span></div>
+      </div>
+
+      <!-- STEP 5 -->
+      <div class="fstep" data-step="5">
+        <h3>Where do the quotes go?</h3>
+        <p class="hint">Last step. Your details go to local specialists only — never sold to data brokers.</p>
+        <div class="summary" id="summary">Your project: <b>—</b></div>
+        <div class="fgrid">
+          <div class="field">
+            <label class="flabel" for="f-name">Your name *</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Jane Smith">
+          </div>
+          <div class="field">
+            <label class="flabel" for="f-phone">Phone *</label>
+            <input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(239) 555-0123">
+          </div>
+          <div class="field">
+            <label class="flabel" for="f-email">Email *</label>
+            <input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+          <div class="field">
+            <label class="flabel" for="f-city">City *</label>
+            <select id="f-city" name="city" required>
+              <option value="" disabled selected>Select your city</option>
+              <option>Cape Coral</option>
+              <option>Fort Myers</option>
+              <option>North Fort Myers</option>
+              <option>Fort Myers Beach</option>
+              <option>Sanibel / Captiva</option>
+              <option>Bonita Springs</option>
+              <option>Estero</option>
+              <option>Lehigh Acres</option>
+              <option>Pine Island / Matlacha</option>
+              <option>Naples</option>
+              <option>Port Charlotte</option>
+              <option>North Port</option>
+              <option>Other SWFL</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label class="flabel" for="f-msg">Anything else? (optional)</label>
+            <textarea id="f-msg" name="message" rows="3" placeholder="Hardware finish, glass style, questions…"></textarea>
+          </div>
+        </div>
+        <div class="consent">
+          <input id="f-consent" type="checkbox" name="tcpa_consent" value="yes" required>
+          <label for="f-consent">I agree to be contacted about my request by phone, text, and email by SWFL Shower Glass Quotes and the local specialists my request is sent to. Message/data rates may apply. This isn't a condition of purchase, and I can opt out anytime.</label>
+        </div>
+        <p class="err" id="err5">Please add your name, phone, email, city, and check the consent box so specialists can reach you.</p>
+        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span><button type="submit" class="btn primary">Send my free quote request →</button></div>
+        <p class="fineprint">No spam. No obligation. Quotes come straight from the specialists.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= 02 / HOW IT WORKS ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="num">02 /</span><h2>How it works</h2></div>
+    <p class="sec-sub">No showroom visit, no calling five shops and repeating yourself. One request does the rounds for you.</p>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Describe your shower</h3><p>Fill in the 60-second form — what you want, roughly how big, and where you are in Southwest Florida.</p></div>
+      <div class="step"><div class="num">1</div><h3>Tap through 5 steps</h3><p>What you need, the style, your setup, your timeline — about 60 seconds, mostly tapping.</p></div>
       <div class="step"><div class="num">2</div><h3>We match you locally</h3><p>Your request goes to shower glass specialists who serve your city — the small local shops that are great at glass and not always easy to find online.</p></div>
       <div class="step"><div class="num">3</div><h3>Compare real quotes</h3><p>Specialists contact you directly with pricing and timelines. Compare, ask questions, hire whoever you like — or nobody.</p></div>
     </div>
   </div>
 </section>
 
-<section class="light" style="padding-top:0">
+<!-- ================= 03 / STYLES ================= -->
+<section>
   <div class="wrap">
-    <h2>Frameless, semi-frameless, or framed?</h2>
-    <p class="lede">The three styles, honestly compared. Your specialist will confirm what fits your opening, studs, and budget.</p>
+    <div class="sec-head"><span class="num">03 /</span><h2>The three styles</h2></div>
+    <p class="sec-sub">Honestly compared. Your specialist confirms what fits your opening, studs, and budget.</p>
     <div class="types">
       <div class="type">
+        <svg viewBox="0 0 300 110" aria-hidden="true"><rect x="55" y="12" width="86" height="88" fill="rgba(14,125,140,.16)" stroke="#0e7d8c" stroke-width="3"/><rect x="146" y="12" width="100" height="88" fill="rgba(14,125,140,.08)" stroke="#0e7d8c" stroke-width="3"/><rect x="136" y="26" width="7" height="14" fill="#ffb454"/><rect x="136" y="72" width="7" height="14" fill="#ffb454"/><rect x="66" y="48" width="5" height="26" fill="#ffb454"/></svg>
         <h3>Frameless</h3>
         <p>Thick ⅜″–½″ tempered glass with minimal clips and hinges. The clean, spa look — nothing between you and the tile. Needs solid mounting surfaces and precise measuring, which is why installers template it first.</p>
-        <p class="price">Typically the premium option</p>
+        <span class="price">The premium option</span>
       </div>
       <div class="type">
+        <svg viewBox="0 0 300 110" aria-hidden="true"><rect x="55" y="12" width="86" height="88" fill="rgba(14,125,140,.16)" stroke="#0e7d8c" stroke-width="3"/><rect x="146" y="12" width="100" height="88" fill="rgba(14,125,140,.08)" stroke="#0e7d8c" stroke-width="3"/><path d="M55 12 h191 M55 100 h191" stroke="#0a1417" stroke-width="6"/></svg>
         <h3>Semi-frameless</h3>
         <p>Frameless-style door with slim framing where structure is needed. Most of the look, a friendlier price, and a little more forgiving on older or out-of-square openings.</p>
-        <p class="price">The middle ground most people pick</p>
+        <span class="price">The middle ground most pick</span>
       </div>
       <div class="type">
+        <svg viewBox="0 0 300 110" aria-hidden="true"><rect x="55" y="12" width="86" height="88" fill="rgba(14,125,140,.16)" stroke="#0a1417" stroke-width="7"/><rect x="146" y="12" width="100" height="88" fill="rgba(14,125,140,.08)" stroke="#0a1417" stroke-width="7"/><path d="M150 12 v88" stroke="#0a1417" stroke-width="5"/></svg>
         <h3>Framed</h3>
         <p>Thinner glass in a full metal frame. The most economical and the sturdiest choice for high-use family bathrooms, rentals, and guest suites.</p>
-        <p class="price">The budget-friendly option</p>
+        <span class="price">The budget-friendly option</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="light" style="padding-top:0">
+<!-- ================= 04 / COST ================= -->
+<section>
   <div class="wrap">
-    <h2>What does shower glass cost in SWFL?</h2>
-    <p class="lede">Ballpark ranges for the Cape Coral / Fort Myers area, so you can sanity-check the quotes you receive.</p>
+    <div class="sec-head"><span class="num">04 /</span><h2>What it costs in SWFL</h2></div>
+    <p class="sec-sub">Ballpark market ranges for the Cape Coral / Fort Myers / Port Charlotte area, so you can sanity-check the quotes you receive.</p>
     <table class="cost">
       <tr><th>Project</th><th class="r">Typical range*</th></tr>
       <tr><td>Frameless door (single swing, standard size)</td><td class="r">$900 – $1,800</td></tr>
@@ -308,26 +504,28 @@
       <tr><td>Framed enclosure</td><td class="r">$600 – $1,400</td></tr>
       <tr><td>Replacement door only</td><td class="r">$500 – $1,200</td></tr>
     </table>
-    <p class="note">*Estimates based on typical Southwest Florida market pricing as of late 2026 — not quotes. Your actual price depends on measurements, glass thickness, hardware finish, and site conditions. The quotes you receive through this service are the real numbers for your bathroom.</p>
+    <p class="note">*Market estimates based on typical Southwest Florida pricing as of late 2026 — not quotes, not offers. Your actual price depends on measurements, glass thickness, hardware finish, and site conditions. The quotes you receive through this service are the real numbers for your bathroom.</p>
   </div>
 </section>
 
-<section class="light" style="padding-top:0">
+<!-- ================= 05 / AREAS ================= -->
+<section>
   <div class="wrap">
-    <h2>Where we match</h2>
-    <p class="lede">Based in Southwest Florida, matching homeowners with shower glass specialists across the region:</p>
+    <div class="sec-head"><span class="num">05 /</span><h2>Where we match</h2></div>
+    <p class="sec-sub">Homeowners matched with shower glass specialists across Southwest Florida — now including Port Charlotte and North Port:</p>
     <div class="areas">
       <span>Cape Coral</span><span>Fort Myers</span><span>North Fort Myers</span><span>Fort Myers Beach</span>
       <span>Sanibel &amp; Captiva</span><span>Bonita Springs</span><span>Estero</span><span>Lehigh Acres</span>
-      <span>Pine Island &amp; Matlacha</span><span>Naples</span>
+      <span>Pine Island &amp; Matlacha</span><span>Naples</span><span class="new">Port Charlotte ★ new</span><span class="new">North Port ★ new</span>
     </div>
   </div>
 </section>
 
-<section class="light" style="padding-top:0">
+<!-- ================= 06 / FAQ ================= -->
+<section>
   <div class="wrap">
-    <h2>Common questions</h2>
-    <p class="lede">Straight answers before you ask.</p>
+    <div class="sec-head"><span class="num">06 /</span><h2>Straight answers</h2></div>
+    <p class="sec-sub">Before you ask.</p>
     <div class="faq">
       <details>
         <summary>Is this service really free?</summary>
@@ -358,31 +556,116 @@
         <p>Your details go to the specialists your request is matched with, and to us so we can make the match. We don't sell your information to data brokers or unrelated marketers.</p>
       </details>
     </div>
-  </div>
-</section>
-
-<section class="light" style="padding-top:0">
-  <div class="wrap">
     <div class="midcta">
       <h2>Ready when you are</h2>
-      <p>One form. Local specialists. Real numbers for your bathroom.</p>
-      <a class="btn" href="#quote">Get my free quotes ↑</a>
+      <p>Five taps. Local specialists. Real numbers for your bathroom.</p>
+      <a class="btn primary" href="#quotes">Get my free quotes ↑</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap cols">
-    <div>
-      <p><strong>SWFL Shower Glass Quotes</strong> is a free quote-matching service operated under the _beachside umbrella in Southwest Florida.</p>
-      <p>We are not a contractor, installer, or glass supplier, and we do not perform, supervise, or warranty any work. All quotes, contracts, licensing, insurance, and warranties are between you and the independent specialist you choose to hire. Price ranges shown on this page are market estimates, not offers.</p>
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <div class="big-mark">Shower<br/>glass<span>,</span><br/>quoted right.</div>
+      </div>
+      <div>
+        <h4>Service Area</h4>
+        <p>Cape Coral · Fort Myers</p>
+        <p>North Fort Myers · Fort Myers Beach</p>
+        <p>Sanibel · Bonita Springs · Estero</p>
+        <p>Lehigh Acres · Pine Island · Naples</p>
+        <p>Port Charlotte · North Port</p>
+      </div>
+      <div>
+        <h4>The Service</h4>
+        <p>Free for homeowners</p>
+        <p>Quote matching only — not a contractor</p>
+        <p>Questions about a request? Reply to your confirmation email</p>
+      </div>
     </div>
-    <div>
-      <p><strong>Service area</strong><br>Cape Coral · Fort Myers · North Fort Myers · Fort Myers Beach · Sanibel · Bonita Springs · Estero · Lehigh Acres · Pine Island · Naples</p>
-      <p><strong>Contact</strong><br>Questions about a request you sent? Reply to your confirmation or use the form above.</p>
+    <p class="legal"><strong>SWFL Shower Glass Quotes</strong> is a free quote-matching service operated under the _beachside umbrella in Southwest Florida. We are not a contractor, installer, or glass supplier, and we do not perform, supervise, or warranty any work. All quotes, contracts, licensing, insurance, and warranties are between you and the independent specialist you choose to hire. Price ranges shown on this page are market estimates, not offers.</p>
+    <div class="madeby">
+      <span>SWFL SHOWER GLASS QUOTES — a quote service, not a contractor.</span>
+      <span>a <b>_beachside</b> service · Southwest Florida</span>
     </div>
   </div>
 </footer>
 
+<script>
+(function(){
+  var form=document.getElementById('funnel');
+  var steps=[].slice.call(form.querySelectorAll('.fstep'));
+  var bars=[].slice.call(form.querySelectorAll('.fbar i'));
+  var stepNo=document.getElementById('stepNo');
+  var stepName=document.getElementById('stepName');
+  var NAMES={1:'What do you need?',2:'Which style?',3:'Your shower setup',4:'When do you want it?',5:'Where do the quotes go?'};
+  var current=1;
+
+  function show(n){
+    current=n;
+    steps.forEach(function(s){ s.classList.toggle('open', +s.getAttribute('data-step')===n); });
+    bars.forEach(function(b,i){ b.classList.toggle('on', i<n); });
+    stepNo.textContent='Step '+n+' of 5';
+    stepName.textContent=NAMES[n];
+    if(n===5){ fillSummary(); }
+    var f=document.getElementById('quotes');
+    if(f){ f.scrollIntoView({behavior:'smooth',block:'start'}); }
+  }
+  function val(name){ var el=form.querySelector('input[name="'+name+'"]:checked'); return el?el.value:''; }
+  function fillSummary(){
+    var parts=[val('need'),val('style'),val('setup'),val('timeline')].filter(Boolean);
+    document.getElementById('summary').innerHTML='Your project: <b>'+(parts.length?parts.join(' · '):'—')+'</b>';
+  }
+
+  // tappable option cards: mark selection; auto-advance on steps 1, 2, 4
+  form.querySelectorAll('.opt').forEach(function(opt){
+    var input=opt.querySelector('input[type=radio]');
+    input.addEventListener('change',function(){
+      var group=form.querySelectorAll('input[name="'+input.name+'"]');
+      group.forEach(function(r){ r.closest('.opt').classList.toggle('sel', r.checked); });
+      var stepEl=opt.closest('.fstep');
+      var n=+stepEl.getAttribute('data-step');
+      if(n===1||n===2||n===4){ setTimeout(function(){ show(n+1); },180); }
+    });
+  });
+
+  // back buttons
+  form.querySelectorAll('.back').forEach(function(b){
+    b.addEventListener('click',function(){ show(current-1); });
+  });
+
+  // step 3 next (has an optional free-text field, so it gets an explicit Next)
+  var next3=form.querySelector('[data-step="3"] .next');
+  next3.addEventListener('click',function(){
+    if(!val('setup')){
+      document.getElementById('err3').style.display='block';
+      form.querySelectorAll('input[name="setup"]').forEach(function(r){ r.closest('.opt').classList.add('missing'); setTimeout(function(){r.closest('.opt').classList.remove('missing');},350); });
+      return;
+    }
+    document.getElementById('err3').style.display='none';
+    show(4);
+  });
+
+  // final validation, then let the form post to FormSubmit normally
+  form.addEventListener('submit',function(e){
+    var ok=true;
+    ['f-name','f-phone','f-email','f-city'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el.value){ ok=false; el.style.borderColor='#c22'; el.style.boxShadow='4px 4px 0 #c22'; }
+      else { el.style.borderColor=''; el.style.boxShadow=''; }
+    });
+    var consent=document.getElementById('f-consent');
+    if(!consent.checked){ ok=false; }
+    if(!ok){
+      e.preventDefault();
+      document.getElementById('err5').classList.add('show');
+      return;
+    }
+    document.getElementById('err5').classList.remove('show');
+  });
+})();
+</script>
 </body>
 </html>
