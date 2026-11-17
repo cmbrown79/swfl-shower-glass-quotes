@@ -163,6 +163,18 @@
   .err{display:none;font-family:'Space Mono';font-size:13px;font-weight:700;color:#b00020;margin-top:14px}
   .err.show{display:block}
 
+  /* ---- photo step ---- */
+  .shots{display:grid;gap:14px}
+  .shot{position:relative;display:flex;gap:16px;align-items:center;background:#fff;border:4px dashed var(--ink);padding:18px;cursor:pointer;box-shadow:6px 6px 0 var(--ink);transition:background .12s}
+  .shot:hover{background:#e8f4f5}
+  .shot input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
+  .shot .glyph{flex:0 0 auto;width:52px;height:52px;display:grid;place-items:center;font-size:29px}
+  .shot .t{font-family:'Archivo Black';text-transform:uppercase;font-size:16px;line-height:1.1;display:block}
+  .shot .d{font-family:'Space Mono';font-size:12px;opacity:.75;margin-top:4px;display:block}
+  .shot .fname{font-family:'Space Mono';font-size:12px;font-weight:700;color:var(--signal);margin-top:5px;display:none;word-break:break-all}
+  .shot.has{border-style:solid;background:#e8f4f5}
+  .shot.has .fname{display:block}
+
   /* ---- how it works ---- */
   .steps{display:grid;gap:18px;padding-bottom:52px}
   @media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
@@ -240,7 +252,7 @@
       <div>
         <div class="kicker">Free quote matching · Cape Coral → North Port</div>
         <h1>Shower glass, <em>quoted</em> by the people who install it.</h1>
-        <p class="lead">Answer five quick taps about your bathroom. We send your request to local shower glass specialists across Southwest Florida, and they come back with real quotes — free, and with no obligation to hire anyone.</p>
+        <p class="lead">Answer a few quick taps about your bathroom — and add photos if you want tighter quotes. We send your request to local shower glass specialists across Southwest Florida, and they come back with real quotes — free, and with no obligation to hire anyone.</p>
         <div class="cta-row">
           <a href="#quotes" class="btn primary">Start — it takes 60 seconds →</a>
         </div>
@@ -287,17 +299,18 @@
 <section id="quotes">
   <div class="wrap">
     <div class="sec-head"><span class="num">01 /</span><h2>Get your quotes</h2></div>
-    <p class="sec-sub">Five quick steps. Tap your answers — specialists usually respond within 1–2 business days, and you never pay us a cent.</p>
+    <p class="sec-sub">Six quick steps, and the last one is optional. Tap your answers — specialists usually respond within 1–2 business days, and you never pay us a cent.</p>
 
-    <form class="funnel" id="funnel" action="https://formsubmit.co/e64d09db36ad46f0080598df07370369" method="POST" novalidate>
+    <form class="funnel" id="funnel" action="https://formsubmit.co/e64d09db36ad46f0080598df07370369" method="POST" enctype="multipart/form-data" novalidate>
       <input type="hidden" name="_subject" value="New shower glass quote request — SWFL Shower Glass Quotes">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://cmbrown79.github.io/swfl-shower-glass-quotes/thanks.html">
+      <input type="hidden" name="_next" value="https://swflshowerglass.com/thanks.html">
+      <input type="hidden" name="photos" id="f-photos" value="none">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
       <div class="fprogress">
-        <span class="stepno" id="stepNo">Step 1 of 5</span>
-        <div class="fbar" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+        <span class="stepno" id="stepNo">Step 1 of 6</span>
+        <div class="fbar" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
         <span class="mono" style="font-size:12px" id="stepName">What do you need?</span>
       </div>
 
@@ -398,7 +411,7 @@
       <!-- STEP 5 -->
       <div class="fstep" data-step="5">
         <h3>Where do the quotes go?</h3>
-        <p class="hint">Last step. Your details go to local specialists only — never sold to data brokers.</p>
+        <p class="hint">Your details go to local specialists only — never sold to data brokers. One optional step after this.</p>
         <div class="summary" id="summary">Your project: <b>—</b></div>
         <div class="fgrid">
           <div class="field">
@@ -442,8 +455,29 @@
           <label for="f-consent">I agree to be contacted about my request by phone, text, and email by SWFL Shower Glass Quotes and the local specialists my request is sent to. Message/data rates may apply. This isn't a condition of purchase, and I can opt out anytime.</label>
         </div>
         <p class="err" id="err5">Please add your name, phone, email, city, and check the consent box so specialists can reach you.</p>
-        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span><button type="submit" class="btn primary">Send my free quote request →</button></div>
+        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span><button type="button" class="btn primary" id="next5">Next →</button></div>
         <p class="fineprint">No spam. No obligation. Quotes come straight from the specialists.</p>
+      </div>
+
+      <!-- STEP 6 -->
+      <div class="fstep" data-step="6">
+        <h3>Add photos — get tighter quotes</h3>
+        <p class="hint">Optional, and worth it. Specialists price faster and closer when they can see the job. No photos handy? Send the request anyway — you can always text them to the specialist later.</p>
+        <div class="shots">
+          <label class="shot"><input type="file" name="attachment" id="ph1" accept="image/*">
+            <span class="glyph">📷</span>
+            <span><span class="t">1 · The whole opening</span><span class="d">Stand back — the full shower or tub, straight on</span><span class="fname"></span></span></label>
+          <label class="shot"><input type="file" name="attachment" id="ph2" accept="image/*">
+            <span class="glyph">🔩</span>
+            <span><span class="t">2 · Door &amp; hardware, close up</span><span class="d">Hinges, handle, frame — plus any damage or problem spots</span><span class="fname"></span></span></label>
+          <label class="shot"><input type="file" name="attachment" id="ph3" accept="image/*">
+            <span class="glyph">📏</span>
+            <span><span class="t">3 · A tape measure across it</span><span class="d">Hold a tape across the opening — rough scale helps more than you'd think</span><span class="fname"></span></span></label>
+        </div>
+        <p class="fineprint" style="text-align:left;margin-top:16px">Photos go only to the specialists your request is matched with. They sharpen the first quote — final pricing always follows an in-person measure.</p>
+        <p class="err" id="err6">Those photos add up to more than 10 MB, which is the most this form can carry. Remove the largest one — or just send the request without it.</p>
+        <div class="fnav"><button type="button" class="btn back">← Back</button><span class="spacer"></span><button type="submit" class="btn primary">Send my free quote request →</button></div>
+        <p class="fineprint">No photos attached? The button works exactly the same.</p>
       </div>
     </form>
   </div>
@@ -455,7 +489,7 @@
     <div class="sec-head"><span class="num">02 /</span><h2>How it works</h2></div>
     <p class="sec-sub">No showroom visit, no calling five shops and repeating yourself. One request does the rounds for you.</p>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Tap through 5 steps</h3><p>What you need, the style, your setup, your timeline — about 60 seconds, mostly tapping.</p></div>
+      <div class="step"><div class="num">1</div><h3>Tap through the steps</h3><p>What you need, the style, your setup, your timeline — about 60 seconds, mostly tapping. An optional photo step at the end helps specialists price it tighter.</p></div>
       <div class="step"><div class="num">2</div><h3>We match you locally</h3><p>Your request goes to shower glass specialists who serve your city — the small local shops that are great at glass and not always easy to find online.</p></div>
       <div class="step"><div class="num">3</div><h3>Compare real quotes</h3><p>Specialists contact you directly with pricing and timelines. Compare, ask questions, hire whoever you like — or nobody.</p></div>
     </div>
@@ -558,7 +592,7 @@
     </div>
     <div class="midcta">
       <h2>Ready when you are</h2>
-      <p>Five taps. Local specialists. Real numbers for your bathroom.</p>
+      <p>A few taps. Local specialists. Real numbers for your bathroom.</p>
       <a class="btn primary" href="#quotes">Get my free quotes ↑</a>
     </div>
   </div>
@@ -600,14 +634,14 @@
   var bars=[].slice.call(form.querySelectorAll('.fbar i'));
   var stepNo=document.getElementById('stepNo');
   var stepName=document.getElementById('stepName');
-  var NAMES={1:'What do you need?',2:'Which style?',3:'Your shower setup',4:'When do you want it?',5:'Where do the quotes go?'};
+  var NAMES={1:'What do you need?',2:'Which style?',3:'Your shower setup',4:'When do you want it?',5:'Where do the quotes go?',6:'Photos — tighter quotes (optional)'};
   var current=1;
 
   function show(n){
     current=n;
     steps.forEach(function(s){ s.classList.toggle('open', +s.getAttribute('data-step')===n); });
     bars.forEach(function(b,i){ b.classList.toggle('on', i<n); });
-    stepNo.textContent='Step '+n+' of 5';
+    stepNo.textContent='Step '+n+' of 6';
     stepName.textContent=NAMES[n];
     if(n===5){ fillSummary(); }
     var f=document.getElementById('quotes');
@@ -648,8 +682,8 @@
     show(4);
   });
 
-  // final validation, then let the form post to FormSubmit normally
-  form.addEventListener('submit',function(e){
+  // contact-step validation — run when leaving step 5 and again at submit
+  function validateContact(){
     var ok=true;
     ['f-name','f-phone','f-email','f-city'].forEach(function(id){
       var el=document.getElementById(id);
@@ -658,12 +692,53 @@
     });
     var consent=document.getElementById('f-consent');
     if(!consent.checked){ ok=false; }
-    if(!ok){
+    document.getElementById('err5').classList.toggle('show', !ok);
+    return ok;
+  }
+  document.getElementById('next5').addEventListener('click',function(){
+    if(validateContact()){ show(6); }
+  });
+
+  // photo slots: show the chosen file name + size on the slot
+  var SLOTNAMES={ph1:'whole opening',ph2:'door & hardware close-up',ph3:'tape measure'};
+  ['ph1','ph2','ph3'].forEach(function(id){
+    var input=document.getElementById(id);
+    input.addEventListener('change',function(){
+      var label=input.closest('.shot');
+      var fname=label.querySelector('.fname');
+      if(input.files && input.files.length){
+        var f=input.files[0];
+        fname.textContent='✓ '+f.name+' · '+(f.size/1048576).toFixed(1)+' MB';
+        label.classList.add('has');
+      } else {
+        fname.textContent='';
+        label.classList.remove('has');
+      }
+    });
+  });
+
+  // final checks, then let the form post to FormSubmit normally
+  form.addEventListener('submit',function(e){
+    if(!validateContact()){
       e.preventDefault();
-      document.getElementById('err5').classList.add('show');
+      show(5);
       return;
     }
-    document.getElementById('err5').classList.remove('show');
+    var total=0, attached=[];
+    ['ph1','ph2','ph3'].forEach(function(id){
+      var input=document.getElementById(id);
+      if(input.files && input.files.length){
+        total+=input.files[0].size;
+        attached.push(SLOTNAMES[id]);
+      }
+    });
+    document.getElementById('f-photos').value=attached.length?attached.length+' photo(s) attached: '+attached.join(', '):'none';
+    if(total>10*1024*1024){
+      e.preventDefault();
+      document.getElementById('err6').classList.add('show');
+      return;
+    }
+    document.getElementById('err6').classList.remove('show');
   });
 })();
 </script>
