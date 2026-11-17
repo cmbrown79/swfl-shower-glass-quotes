@@ -306,7 +306,6 @@
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://swflshowerglass.com/thanks.html">
       <input type="hidden" name="photos" id="f-photos" value="none">
-      <input type="hidden" name="_captcha" value="false">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
       <div class="fprogress">
@@ -465,15 +464,9 @@
         <h3>Add photos — get tighter quotes</h3>
         <p class="hint">Optional, and worth it. Specialists price faster and closer when they can see the job. No photos handy? Send the request anyway — you can always text them to the specialist later.</p>
         <div class="shots">
-          <label class="shot"><input type="file" name="attachment" id="ph1" accept="image/*">
+          <label class="shot"><input type="file" name="attachment" id="ph" accept="image/*" multiple>
             <span class="glyph">📷</span>
-            <span><span class="t">1 · The whole opening</span><span class="d">Stand back — the full shower or tub, straight on</span><span class="fname"></span></span></label>
-          <label class="shot"><input type="file" name="attachment" id="ph2" accept="image/*">
-            <span class="glyph">🔩</span>
-            <span><span class="t">2 · Door &amp; hardware, close up</span><span class="d">Hinges, handle, frame — plus any damage or problem spots</span><span class="fname"></span></span></label>
-          <label class="shot"><input type="file" name="attachment" id="ph3" accept="image/*">
-            <span class="glyph">📏</span>
-            <span><span class="t">3 · A tape measure across it</span><span class="d">Hold a tape across the opening — rough scale helps more than you'd think</span><span class="fname"></span></span></label>
+            <span><span class="t">Tap to add photos — up to 3</span><span class="d">The three that help most: 1 · the whole opening, straight on &nbsp; 2 · door &amp; hardware close-up &nbsp; 3 · a tape measure held across it</span><span class="fname"></span></span></label>
         </div>
         <p class="fineprint" style="text-align:left;margin-top:16px">Photos go only to the specialists your request is matched with. They sharpen the first quote — final pricing always follows an in-person measure.</p>
         <p class="err" id="err6">Those photos add up to more than 10 MB, which is the most this form can carry. Remove the largest one — or just send the request without it.</p>
@@ -700,22 +693,22 @@
     if(validateContact()){ show(6); }
   });
 
-  // photo slots: show the chosen file name + size on the slot
-  var SLOTNAMES={ph1:'whole opening',ph2:'door & hardware close-up',ph3:'tape measure'};
-  ['ph1','ph2','ph3'].forEach(function(id){
-    var input=document.getElementById(id);
-    input.addEventListener('change',function(){
-      var label=input.closest('.shot');
-      var fname=label.querySelector('.fname');
-      if(input.files && input.files.length){
-        var f=input.files[0];
-        fname.textContent='✓ '+f.name+' · '+(f.size/1048576).toFixed(1)+' MB';
-        label.classList.add('has');
-      } else {
-        fname.textContent='';
-        label.classList.remove('has');
+  // photo input: show the chosen file names + sizes on the slot
+  var phInput=document.getElementById('ph');
+  phInput.addEventListener('change',function(){
+    var label=phInput.closest('.shot');
+    var fname=label.querySelector('.fname');
+    if(phInput.files && phInput.files.length){
+      var parts=[];
+      for(var i=0;i<phInput.files.length;i++){
+        parts.push('✓ '+phInput.files[i].name+' · '+(phInput.files[i].size/1048576).toFixed(1)+' MB');
       }
-    });
+      fname.textContent=parts.join('  ');
+      label.classList.add('has');
+    } else {
+      fname.textContent='';
+      label.classList.remove('has');
+    }
   });
 
   // final checks, then let the form post to FormSubmit normally
@@ -725,15 +718,11 @@
       show(5);
       return;
     }
-    var total=0, attached=[];
-    ['ph1','ph2','ph3'].forEach(function(id){
-      var input=document.getElementById(id);
-      if(input.files && input.files.length){
-        total+=input.files[0].size;
-        attached.push(SLOTNAMES[id]);
-      }
-    });
-    document.getElementById('f-photos').value=attached.length?attached.length+' photo(s) attached: '+attached.join(', '):'none';
+    var total=0, names=[];
+    if(phInput.files){
+      for(var j=0;j<phInput.files.length;j++){ total+=phInput.files[j].size; names.push(phInput.files[j].name); }
+    }
+    document.getElementById('f-photos').value=names.length?names.length+' photo(s) attached: '+names.join(', '):'none';
     if(total>10*1024*1024){
       e.preventDefault();
       document.getElementById('err6').classList.add('show');
